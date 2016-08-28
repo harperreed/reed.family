@@ -18,7 +18,9 @@
 <script>
 
 var images = ['L1000697.JPG', 'L1040473.JPG', 'L1050459-HDR.jpg', 'L1060044-HDR.jpg', 'L1000708.JPG', 'L1050409.JPG', 'L1060064-HDR.jpg'];
-$('html').css({'background-image': 'url(imgs/' + images[Math.floor(Math.random() * images.length)] + ')'});
+var image = images[Math.floor(Math.random() * images.length)];
+console.log(image);
+$('html').css({'background-image': 'url(imgs/' + image + ')'});
 </script>
 </body>
 </html>
